@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/met_main_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:met_baseColor="#0056d3"
+        app:met_bottomTextSize="18sp"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelTextSize="20sp"
+        app:met_primaryColor="#982360" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/met_main_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/password"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/met_main_name"
+        app:met_baseColor="#0056d3"
+        app:met_bottomTextSize="18sp"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelTextSize="20sp"
+        app:met_primaryColor="#982360" />
+
+    <Button
+        android:id="@+id/btn_main_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/shape_button_white"
+        android:text="@string/register"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_main_login"
+        app:layout_constraintTop_toBottomOf="@id/met_main_pwd" />
+
+    <Button
+        android:id="@+id/btn_main_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/shape_button_blue"
+        android:text="@string/login"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/btn_main_register"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/met_main_pwd" />
+</android.support.constraint.ConstraintLayout>
